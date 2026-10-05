@@ -502,7 +502,8 @@
     <value>Cron Ausdruck ist ungültig</value>
   </data>
   <data name="ServersPage_Note_Text" xml:space="preserve">
-    <value>Einige der Server haben innerhalb der letzten Minute keine Rückmeldung zurück gemeldet und werden möglicherweise abgebrochen. Wenn die Server in naher Zukunft keine Rückmeldung geben, werden sie automatisch entfernt, nachdem das Zeitlimit überschritten wurde. Es sind keine manuellen Maßnahmen erforderlich.</value>
+    <value>Einige der Server haben innerhalb der letzten Minute keine Rückmeldung zurück gemeldet und werden möglicherweise abgebrochen. Wenn die Server in naher Zukunft keine Rückmeldung geben, werden sie automatisch entfernt, nachdem das Zeitlimit überschritten wurde. Es sind keine manuellen Maßnahmen erforderlich.
+                    Unvollständige Hintergrund-Jobs, die auf diesen Servern laufen, werden automatisch erneut in die Warteschlange gestellt. Sie können den Vorgang jedoch beschleunigen, indem Sie die Seite &lt;a href="{0}"&gt;Jobs bearbeiten&lt;/a&gt; aufrufen.</value>
   </data>
   <data name="ServersPage_Note_Title" xml:space="preserve">
     <value>Nicht aktive Server werden automatisch entfernt</value>
@@ -518,5 +519,59 @@
   </data>
   <data name="JobDetailsPage_Parameters" xml:space="preserve">
     <value>Parameter</value>
+  </data>
+  <data name="AwaitingJobsPage_Table_Since" xml:space="preserve">
+    <value>Seit</value>
+  </data>
+  <data name="DeletedJobsPage_Table_Exception" xml:space="preserve">
+    <value>Ausnahme</value>
+  </data>
+  <data name="FailedJobsPage_FailedJobsNotExpire_Warning_Html" xml:space="preserve">
+    <value>&lt;strong&gt;Fehlerhafte Jobs laufen nicht ab&lt;/strong&gt;, damit Sie sie ohne Zeitdruck erneut in die Warteschlange stellen können.
+                Sie sollten sie manuell erneut in die Warteschlange stellen oder löschen, oder das Attribut &lt;code&gt;AutomaticRetry(OnAttemptsExceeded = AttemptsExceededAction.Delete)&lt;/code&gt;
+                verwenden, um sie automatisch zu löschen.</value>
+  </data>
+  <data name="JobDetailsPage_JobAbortedNotActive_Warning_Html" xml:space="preserve">
+    <value>&lt;strong&gt;Der Job wurde abgebrochen&lt;/strong&gt; - er wird vom Server
+                        &lt;code&gt;{0}&lt;/code&gt; verarbeitet, der sich derzeit nicht in der Liste der
+                        &lt;a href="{1}"&gt;aktiven Server&lt;/a&gt; befindet.
+                        Er wird nach dem Unsichtbarkeits-Timeout automatisch wiederholt. Alternativ kann der Job
+                        auch manuell in die Warteschlange gestellt oder gelöscht werden.</value>
+  </data>
+  <data name="LayoutPage_Footer_StorageTime" xml:space="preserve">
+    <value>Speicherzeit:</value>
+  </data>
+  <data name="LayoutPage_Footer_TimeIsOutOfSync" xml:space="preserve">
+    <value>Die Anwendungszeit ist nicht mit der Speicherzeit synchronisiert</value>
+  </data>
+  <data name="Metrics_SQLServer_ActiveTransactions" xml:space="preserve">
+    <value>Aktive Transaktionen</value>
+  </data>
+  <data name="Metrics_SQLServer_DataFilesSize" xml:space="preserve">
+    <value>Belegte Datendatei(en) (MB)</value>
+  </data>
+  <data name="Metrics_SQLServer_LogFilesSize" xml:space="preserve">
+    <value>Belegte Protokolldatei(en) (MB)</value>
+  </data>
+  <data name="Metrics_SQLServer_SchemaVersion" xml:space="preserve">
+    <value>Schemaversion</value>
+  </data>
+  <data name="RetriesPage_Warning_Html" xml:space="preserve">
+    <value>&lt;h4&gt;Wiederholungen funktionieren, aber diese Seite kann nicht angezeigt werden&lt;/h4&gt;
+        &lt;p&gt;
+            Keine Sorge, Wiederholungen funktionieren wie erwartet. Ihr aktueller Job-Speicher unterstützt
+            einige Abfragen nicht, die zur Anzeige dieser Seite erforderlich sind. Bitte aktualisieren Sie Ihren Speicher oder warten Sie,
+            bis der vollständige Befehlssatz implementiert ist.
+        &lt;/p&gt;
+        &lt;p&gt;
+            Auf der Seite &lt;a href="{0}"&gt;Geplante Jobs&lt;/a&gt; sehen Sie alle
+            geplanten Jobs einschließlich der Wiederholungen.
+        &lt;/p&gt;</value>
+  </data>
+  <data name="SucceededJobsPage_Table_Duration" xml:space="preserve">
+    <value>Dauer</value>
+  </data>
+  <data name="SucceededJobsPage_Table_Latency" xml:space="preserve">
+    <value>Latenz</value>
   </data>
 </root>
